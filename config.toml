@@ -77,20 +77,20 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
 [[params.social]]
-icon = "fab fa-facebook-f"
-link = "https://www.facebook.com/ayusun"
-
-[[params.social]]
-icon = "fab fa-instagram"
-link = "https://www.instagram.com/theayusun/"
+icon = "fab fa-linkedin"
+link = "https://linkedin.com/in/ayusun"
 
 [[params.social]]
 icon = "fab fa-github"
 link = "https://github.com/ayusun"
 
 [[params.social]]
-icon = "fab fa-linkedin"
-link = "https://linkedin.com/in/ayusun"
+icon = "fab fa-medium"
+link = "https://medium.com/@ayusun"
+
+[[params.social]]
+icon = "fab fa-instagram"
+link = "https://www.instagram.com/theayusun/"
 
 
 ################################### English language #####################################
