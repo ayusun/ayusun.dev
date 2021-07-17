@@ -1,0 +1,11 @@
+name = "Ayush"
+license = "MIT"
+licenselink = "https://github.com/somratpro/somrat/blob/master/LICENSE"
+description = "Portfolio Template (Archived)"
+homepage = "https://somrat.netlify.com"
+tags = ['ayusun', 'Ayush', 'Developer', 'Lead Engineer', 'Software Developer']
+min_version = "0.60.0"
+
+[author]
+  name = "ayusun"
+  homepage = "https://ayusun.dev/"
