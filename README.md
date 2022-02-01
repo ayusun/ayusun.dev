@@ -12,3 +12,7 @@ rm -rf public/
 hugo
 aws s3 sync public/ s3://ayusun.dev
 ```
+
+#Things to do
+* Forward the contact form to email of my choice
+* Add CI/CD to portfolio website
