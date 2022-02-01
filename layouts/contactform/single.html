@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="section {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="/images/thanks.gif">
+            <h1>I will reach out to you as soon as possible!!</h3>
+        </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

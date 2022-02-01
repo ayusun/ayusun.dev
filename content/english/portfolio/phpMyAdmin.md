@@ -1,5 +1,5 @@
 ---
-title: "phpMyAdmin"
+title: "php MyAdmin"
 date: 2013-09-01
 image: "images/portfolio/phpmyadminlogo.png"
 categories: ["opensource","Development"]

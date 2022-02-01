@@ -1,5 +1,5 @@
 ---
-title: "moneySplit"
+title: "money Split"
 date: 2017-12-18
 image: "images/portfolio/moneySplit.jpg"
 categories: ["Cloud","Development"]

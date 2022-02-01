@@ -1,0 +1,5 @@
+.terraform
+terraform.tfstate.backup
+*.zip
+public/
+.hugo_build.lock

@@ -48,18 +48,22 @@ skill:
   skill_list:
     # skill item loop
     - name : "Java Development"
-      percentage : "98%"
+      percentage : "85%"
       
     # skill item loop
     - name : "Devops & Security"
+      percentage : "70%"
+      
+    # skill item loop
+    - name : "Stakeholder Management"
+      percentage : "75%"
+    
+    # skill item loop
+    - name : "People Management"
       percentage : "75%"
       
     # skill item loop
-    - name : "Documentation & Stakeholder Management"
-      percentage : "75%"
-      
-    # skill item loop
-    - name : "GRC Work"
+    - name : "Governance Risk and Control"
       percentage : "30%"
 
 

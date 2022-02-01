@@ -324,7 +324,7 @@ End Services -->
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item"
             data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
             <div class="item-holder">
-              <a class="image-pop" href="{{ .Params.image | absURL }}" title="{{ .Title | markdownify }}">
+              <a title="{{ .Title | markdownify }}">
                  <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
               </a>
               <div class="item-caption">

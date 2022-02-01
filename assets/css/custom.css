@@ -1,3 +1,6 @@
-.about-me-text {
-    text-align: justify;
-}
+.fixed-footer {
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+  }
