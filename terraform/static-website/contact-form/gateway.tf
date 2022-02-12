@@ -17,13 +17,13 @@ resource "aws_api_gateway_method" "ContactMethod" {
 }
 
 resource "aws_api_gateway_integration" "ContactFormIntegration" {
-  rest_api_id          = aws_api_gateway_rest_api.ContactAPI.id
-  resource_id          = aws_api_gateway_resource.ContactResource.id
-  http_method          = aws_api_gateway_method.ContactMethod.http_method
-  type                 = "AWS_PROXY"
+  rest_api_id             = aws_api_gateway_rest_api.ContactAPI.id
+  resource_id             = aws_api_gateway_resource.ContactResource.id
+  http_method             = aws_api_gateway_method.ContactMethod.http_method
+  type                    = "AWS_PROXY"
   integration_http_method = "POST"
-  uri                  = aws_lambda_function.lambda.invoke_arn
-#  cache_key_parameters = ["method.request.path.param"]
+  uri                     = aws_lambda_function.lambda.invoke_arn
+  #  cache_key_parameters = ["method.request.path.param"]
   cache_namespace      = "foobar"
   timeout_milliseconds = 29000
 
@@ -58,4 +58,21 @@ resource "aws_api_gateway_stage" "contact_prod_stage" {
   deployment_id = aws_api_gateway_deployment.ContactFormDeployment.id
   rest_api_id   = aws_api_gateway_rest_api.ContactAPI.id
   stage_name    = local.api_gw_stage_name
+}
+
+# Want to put some limits on how many times my API will be called.
+# I don't expect me to be contacted more than 25 times a day
+resource "aws_api_gateway_usage_plan" "contact_form_usage_plan" {
+  name         = "contact-form-usage-plan"
+  description  = "Usage Plan for Contact Form"
+
+  api_stages {
+    api_id = aws_api_gateway_rest_api.ContactAPI.id
+    stage  = aws_api_gateway_stage.contact_prod_stage.stage_name
+  }
+
+  quota_settings {
+    limit  = 25
+    period = "DAY"
+  }
 }

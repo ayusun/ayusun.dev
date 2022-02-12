@@ -13,6 +13,11 @@ hugo
 aws s3 sync public/ s3://ayusun.dev
 ```
 
-#Things to do
+# Terraform Config
+Terraform config for the static website is located under terraform/static-website.
+
+
+# Things to do
 * Forward the contact form to email of my choice
 * Add CI/CD to portfolio website
+* URL Rewriter caching

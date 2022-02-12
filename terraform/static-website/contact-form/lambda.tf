@@ -12,22 +12,25 @@ resource "aws_lambda_permission" "apigw_lambda" {
 
 data "archive_file" "zip" {
   type        = "zip"
-  source_dir = "src/"
+  source_dir  = "src/"
   output_path = "lambda.zip"
 }
 
 resource "aws_lambda_function" "lambda" {
-  filename      = "lambda.zip"
-  description   = "Lambda to handle Contact form of ayusun.dev website"
-  function_name = "ContactFormLambda"
-  role          = aws_iam_role.iam_for_lambda.arn
-  handler       = "index.handler"
-  runtime       = "nodejs14.x"
+  filename         = "lambda.zip"
+  description      = "Lambda to handle Contact form of ayusun.dev website"
+  function_name    = "ContactFormLambda"
+  role             = aws_iam_role.iam_for_lambda.arn
+  handler          = "index.handler"
+  runtime          = "nodejs14.x"
   source_code_hash = data.archive_file.zip.output_base64sha256
   environment {
     variables = {
       DEST_NAME = local.contact_form_db_name
     }
+  }
+  tracing_config {
+    mode = "PassThrough"
   }
 }
 
