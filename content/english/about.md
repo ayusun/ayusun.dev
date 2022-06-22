@@ -5,7 +5,7 @@ image : "images/backgrounds/portrait.jpg"
 button:
   enable : true
   label : "DOWNLOAD MY CV"
-  link : "https://1drv.ms/b/s!AoRPDPERktQHjTDJ7ccTEYmgguYn?e=SYa24V"
+  link : "https://drive.google.com/file/d/146Dhz6jVo2lDLqMOBGMJSu9Vxtgmugli/view?usp=sharing"
 
 ########################### Experience ##############################
 experience:
@@ -13,15 +13,15 @@ experience:
   title : "EXPERIENCE"
   experience_list:
     # experience item loop
-    - name : "Lead Engineer"
+    - name : "Engineering Manager"
       company : "Traveloka"
       duration : "October, 2018 - Present"
-      content : "&gt; Built & Lead engineering of Central Fraud Platform with a team of five <br/>
-      > Built & Lead Engineering of Forex Platform for Traveloka serving millions of transactions daily with team of three <br />
-      > Engineering delegate for Corporate Technology <br />
-      > Devops Lead for Corporate Technology <br />
-      > Helped create Roadmap for Department engineering efforts <br /> 
-      > Scrum Practitioner<br />
+      content : "&gt; Managing DevOps, QA, and Web Engineering domains with a team of engineers working in cross-domain, cross-functional teams, bringing in necessary Engineering Excellence.  <br/>
+      > Planning and Accountable for AWS Infra budget for Corporate Technology.  <br />
+      > Built & Owned Engineering of Fraud Platform remediating risk and preventing unnecessary losses for the company  <br />
+      > Built and owned the Currency Platform which is a Single Source of truth across the entire Traveloka. Implemented automation saving 10 man-hours per month  <br />
+      > Acted as Technical Point of Contact for External Auditors. Also helped set up processes and guidelines for the teams across Geographies & Departments making them Compliance ready <br /> 
+      > Won Grit Award for showing perseverance, taking extra responsibilities and delivering them<br />
       "
       
     # experience item loop

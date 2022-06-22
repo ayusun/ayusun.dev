@@ -7,8 +7,9 @@ bg_image : "images/backgrounds/full-nav-bg.jpg"
 # animated text loop
 occupations:
 - "Backend Developer"
-- "Engineering Lead"
+- "Engineering Manger"
 - "Tech Evangelist"
+- "Story Teller"
 
 # slider background image loop
 slider_images:
